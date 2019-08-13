@@ -1,0 +1,48 @@
+{% extends 'comman.html' %}
+{% block title %}
+    Register
+{% endblock %}
+
+{% block content %}
+    <form method="post">
+    {% csrf_token %}
+   <center> <font size="6"><table>
+       <font size="50"><tr><h1>Registration form</h1></tr></font>
+       <tr>
+            <td>Name:</td>
+            <td><input type="text" name="name"></td>
+        </tr>
+
+        <tr>
+            <td>Email_id:</td>
+            <td><input type="email" name="emailid" ></td>
+        </tr>
+        <tr>
+            <td>Mobile_no</td>
+            <td><input type="text" name="mobile" ></td>
+        </tr>
+        <tr>
+         <td>College_name:</td>
+            <td><input type="search" name="college" ></td>
+        </tr>
+        <tr>
+         <td>Password:</td>
+            <td><input type="password" name="password" ></td>
+        </tr>
+        <tr>
+         <td>Conform_
+             password:</td>
+            <td><input type="password" name="confirmpassword" ></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" value="Register">
+            </td>
+        </tr>
+
+   </table></font></center>
+    </form>
+
+{% endblock %}

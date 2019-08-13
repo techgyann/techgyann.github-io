@@ -1,0 +1,31 @@
+{% extends 'comman.html' %}
+{% block title %}
+    Login
+{% endblock %}
+{% block content %}
+    <form method="post">
+    {% csrf_token %}
+  <font size="5"> <center> <table>
+      <tr><h1>Login form</h1></tr>
+        <tr>
+            <td>User_Id:</td>
+            <td><input type="email" name="emailid"></td>
+        </tr>
+
+        <tr>
+            <td>Password:</td>
+            <td><input type="password" name="password" ></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" value="Login">
+
+            </td>
+
+        </tr>
+    </table></center></font>
+    </form>
+
+{% endblock %}
